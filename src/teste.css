@@ -191,6 +191,18 @@ header {
 /*Fim texto body*/
 /*Newsletter*/
 @media(max-width:767px){
+    .container.blog .content .card {
+        margin: 11px 0px!important;
+    }
+    .container.blog .row .header {
+        width: 100%!important;
+    }
+    .navegation input[type="text"] {
+        box-sizing: border-box;
+        margin-left: -8em;
+        margin-top: 20em;
+        width: 259px!important;
+   }
     .footer p {
         text-align: center;
         font-size: 13px;
@@ -240,6 +252,9 @@ header {
    }
 }
 @media(min-width:768px){
+    .category li {
+        margin-left: 25px;
+   }
     img.seta {
         width: 8%!important;
    }
@@ -433,6 +448,17 @@ section.blog img {
     height: auto;
 }
 @media screen and (max-width:768px) {
+    section.navegation nav {
+        display: block;
+   }
+    section.navegation li.nav-item.disable, section.navegation li.nav-item.active {
+        text-align: center;
+        line-height: 17px!important;
+        margin-top: 1em;
+        margin-left: 0%;
+        margin-bottom: 1em;
+        width: 200%;
+   }
     .container.blog .content{
         flex-direction: column;
    }
@@ -453,6 +479,9 @@ section.blog img {
 }
 @media(min-width:768px) and (max-width:1024px){
 }
+section.copy p {
+    text-align: initial!important;
+}
 .category li a {
     color: white!important;
     position: relative;
@@ -465,4 +494,30 @@ section.navegation li.nav-item.disable,section.navegation li.nav-item.active{
 }
 img.lupa {
     margin-left: -2em;
+}
+html {
+    overflow-x: hidden!important;
+}
+.footer-col .medias-socias{
+    margin-top: 30px;
+}
+.footer-col .medias-socias a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+}
+.footer-col .medias-socias a i{
+    font-size: 20px;
+}
+.footer-col .medias-socias a:hover{
+    color: #415aca;
+    background-color: white;
 }
